@@ -1,0 +1,66 @@
+@import "./vendor/normalize";
+@import "./partials/colors";
+@import "./partials/mixins";
+@import "./partials/typography";
+
+
+.navigation {
+    background-color: $bg-dark;
+    padding: 20px;
+    nav{
+        display:inline;
+        a {
+            color: $font-light;
+            float: right;
+        }
+    }
+    div {
+        color: $font-light;
+        display: inline;
+        font-size: 30px;
+        font-family: $font-primary;
+        margin-left: 50px;
+    }
+}
+.container {
+    padding: 2rem;
+    button {
+        @include primary-btn($first-btn);
+    }
+    h1{
+        font-family: $font-third;
+        color: $font-secondary-color;
+        margin-left: 50px;
+        
+    }
+    h2{
+        font-family: $font-secondary;
+        padding-left: 50px;
+    }
+
+}
+p {
+    font-size: 20px;
+    font-family: $font-secondary;
+    padding-left: 50px;
+}
+img {
+    display: inline;
+    margin-left:50px;
+}
+.footer {
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(117, 115, 115);
+  color: white;
+  text-align: center
+}
+// media queries
+@media (min-width: 1024px) {
+    .navigation {
+        background-color: rgb(0, 0, 0);
+    }
+
+}
